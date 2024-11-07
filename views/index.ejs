@@ -1,0 +1,38 @@
+<%- include("partials/header.ejs") %>
+<div class="divMain">
+<section id="homePageMain">
+<h1 class="dm-serif-display-regular">Blogpost Whiteboard</h1>
+<p>Share your thoughts in this virtual blogpost whiteboard. <br> Edit them, delete them and once you exit, all's forgotten. <br> Enjoy this safe space!</p>
+<a href="/blogPost">Write a blog</a>
+<a href="/edit" hidden>Edit Section</a>
+</section>
+
+<% if(locals.bodyFile && locals.receptor){ %>
+    <section class="homePageSub1">
+    <h2 class="blogHeading">My blogposts</h2><hr>
+    <ul style="list-style-type: none;">
+        <% for(var i=0; i<bodyFile.length; i++){ %>
+                <li class="listItem afterBlog" id="<%= i %>"> <form action="/edit" method="POST">
+                    <%= bodyFile[i] %> <% receptor %>
+                    <textarea name="changeRoute" class="file1" hidden><%= bodyFile[i] %></textarea>
+                    <br><input type="submit" value="Edit">
+                </form>
+                <form action="/delete" method="POST">
+                    <textarea name="deleteRoute" class="fileDelete" hidden><%= bodyFile[i] %></textarea>
+                    <input type="submit" value="Delete">
+                </form>
+                </li>
+                <hr>
+            
+        <% } %>
+    </ul>
+</section>
+    <% } else{%>
+        <section class="homePageSub1">
+            <h2 class="blogHeading">Your content will appear here</h2>
+        </section>
+    <% } %>
+</div>
+<div class="divFoot">
+<%- include("partials/footer.ejs") %>
+</div>

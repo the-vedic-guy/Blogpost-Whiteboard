@@ -1,0 +1,131 @@
+body{
+    text-align: center;
+    background-color: bisque;
+    font-size: 1rem;
+    font-family: "Quicksand", sans-serif;
+    color:navy;
+    padding: 0px;
+    margin: 0px;
+}
+
+.dm-serif-display-regular {
+    font-family: "DM Serif Display", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+h1{
+    color: midnightblue;
+    font-size: 3rem;
+    padding: 30px;
+}
+
+h2{
+    color: midnightblue;
+    font-size: 2rem;
+    font-family: "DM Serif Display, serif";
+}
+
+a{
+    margin: 20px;
+    padding: 10px;
+    border-radius: 20px;
+    background-color:coral;
+    text-decoration: none;
+    font-weight: 400;
+}
+a:hover{
+    background-color:beige;
+}
+
+p{
+    padding: 50px;
+}
+form{
+    display: inline;
+}
+
+input{
+    background-color: coral;
+    font-weight: 400;
+    margin: 10px;
+    padding: 10px;
+    border: 0px;
+    border-radius: 20px;
+    width: 100px;
+}
+input:hover{
+    background-color:beige;
+}
+
+ul{
+    padding-left: 0px;
+    margin-left: 0px;
+}
+.listItem{
+    display: block;
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.quicksand {
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+#homePageMain{
+    height: 50%;
+}
+
+.homePageSub{
+    height: 80vh;
+}
+
+.homePageSub1{
+    height: 20%;
+}
+
+.blogHeading{
+    text-align: center;
+    padding: 40px;
+}
+
+footer{
+    height: 100px;
+    display: block;
+    position: relative;
+    bottom: 0;
+    margin-top: 20px;
+    padding-top: 10px;
+    background-color:burlywood;
+    padding-bottom: 10px;
+    width: 100%;
+  }
+
+.blogPost{
+    width: 45%;
+    color:navy;
+    font-family: "Quicksand", sans-serif;
+    margin-top: 100px;
+    height: 100px;
+}
+
+.afterBlog{
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.divMain{
+    min-height: 80vh;
+}
+
+.divFoot{
+    min-height: 20vh;
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    background-color:burlywood;
+}

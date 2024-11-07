@@ -1,0 +1,10 @@
+<%- include("partials/header.ejs") %>
+<section class="homePageSub">
+<h2 class="blogHeading">Your Blog Space</h2>
+<form action="/submit" method="POST">
+<textarea name="blogPost" class="blogPost" placeholder="Type here"></textarea><br>
+<input type="submit" value="Post">
+<a href="/">Home</a>
+</form>
+</section>
+<%- include("partials/footer.ejs") %>
